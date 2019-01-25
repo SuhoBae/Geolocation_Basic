@@ -1,0 +1,52 @@
+/* body{
+    background: #91e0e0;
+
+}
+
+body > header {
+	grid-area: header;
+	align-self: start
+}
+
+body > .sidebar {
+	grid-area: sidebar
+}
+
+body > main {
+	grid-area: main
+}
+
+body > footer {
+	grid-area: footer;
+	justify-self: center;
+	align-self: end
+}
+
+body {
+	display: grid;
+	align-content: space-between;
+	grid-template-rows: 120px 1fr 60px;
+	grid-template-columns: 30% 1fr;
+	grid-template-areas: 
+	"header  header"
+	"sidebar main  "
+	"footer  footer"
+}
+
+body {
+	grid-kiss:
+		"+-------------------------------+      "
+		"|           header ↑            | 120px"
+		"+-------------------------------+      "
+		"                                       "
+		"+-- 30% ---+  +--- auto --------+      "
+		"| .sidebar |  |       main      | auto "
+		"+----------+  +-----------------+      "
+		"                                       "
+		"+-------------------------------+      "
+		"|              ↓                | 60px "
+		"|         → footer ←            |      "
+		"+-------------------------------+      "
+}
+
+*/
